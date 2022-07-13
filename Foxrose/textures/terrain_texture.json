@@ -1813,8 +1813,8 @@
             "textures/blocks/mushroom_block_skin_stem"
          ]
       },
-      "mushroom_brown": {
-         "textures": "textures/blocks/mushroom_brown"
+      "stupid_mushroom_brown": {
+         "textures": "textures/blocks/stupid_fucking_shrooms/mushroom_brown"
       },
       "mushroom_brown_bottom": {
          "textures": [
@@ -1936,8 +1936,8 @@
             "textures/blocks/mushroom_block_skin_stem"
          ]
       },
-      "mushroom_red": {
-         "textures": "textures/blocks/mushroom_red"
+      "stupid_mushroom_red": {
+         "textures": "textures/blocks/stupid_fucking_shrooms/mushroom_red"
       },
       "mushroom_red_bottom": {
          "textures": [
