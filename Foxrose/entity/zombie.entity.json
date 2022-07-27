@@ -1,0 +1,135 @@
+{
+	"format_version": "1.10.0",
+	"minecraft:client_entity": {
+		"description": {
+			"identifier": "minecraft:zombie",
+			"min_engine_version": "1.8.0",
+			"materials": {
+				"default": "entity_alphatest",
+				"glowy": "entity_alphatest"
+			},
+			"textures": {
+				// Skin Layer
+				"base": "textures/entity/zombie/skins/ichi",
+				"base1": "textures/entity/zombie/skins/ni",
+				"base2": "textures/entity/zombie/skins/san",
+				"base3": "textures/entity/zombie/skins/yon",
+				"base4": "textures/entity/zombie/skins/go",
+				"base5": "textures/entity/zombie/skins/roku",
+				"base6": "textures/entity/zombie/skins/nana",
+				// Biome Layer
+				"desert": "textures/entity/zombie/biomes/biome_desert",
+				"jungle": "textures/entity/zombie/biomes/biome_jungle",
+				"plains": "textures/entity/zombie/biomes/biome_plains",
+				"savanna": "textures/entity/zombie/biomes/biome_savanna",
+				"snow": "textures/entity/zombie/biomes/biome_snow",
+				"swamp": "textures/entity/zombie/biomes/biome_swamp",
+				"taiga": "textures/entity/zombie/biomes/biome_taiga",
+				// Desert Cosmetic Layer
+				"desert_cosmetic": "textures/entity/zombie/cosmetics/biome_desert",
+				"desert_cosmetic_1": "textures/entity/zombie/cosmetics/biome_desert",
+				"desert_cosmetic_2": "textures/entity/zombie/cosmetics/biome_desert",
+				// Jungle Cosmetic Layer
+				"jungle_cosmetic": "textures/entity/zombie/cosmetics/biome_jungle",
+				"jungle_cosmetic_1": "textures/entity/zombie/cosmetics/biome_jungle",
+				"jungle_cosmetic_2": "textures/entity/zombie/cosmetics/biome_jungle",
+				// Plains Cosmetic Layer
+				"plains_cosmetic": "textures/entity/zombie/cosmetics/biome_plains",
+				"plains_cosmetic_1": "textures/entity/zombie/cosmetics/biome_plains",
+				"plains_cosmetic_2": "textures/entity/zombie/cosmetics/biome_plains",
+				// Savanna Cosmetic Layer
+				"savanna_cosmetic": "textures/entity/zombie/cosmetics/biome_savanna",
+				"savanna_cosmetic_1": "textures/entity/zombie/cosmetics/biome_savanna",
+				"savanna_cosmetic_2": "textures/entity/zombie/cosmetics/biome_savanna",
+				// Snow Cosmetic Layer
+				"snow_cosmetic": "textures/entity/zombie/cosmetics/biome_snow",
+				"snow_cosmetic_1": "textures/entity/zombie/cosmetics/biome_snow",
+				"snow_cosmetic_2": "textures/entity/zombie/cosmetics/biome_snow",
+				// Swamp Cosmetic Layer
+				"swamp_cosmetic": "textures/entity/zombie/cosmetics/biome_swamp",
+				"swamp_cosmetic_1": "textures/entity/zombie/cosmetics/biome_swamp",
+				"swamp_cosmetic_2": "textures/entity/zombie/cosmetics/biome_swamp",
+				// Taiga Cosmetic Layer
+				"taiga_cosmetic": "textures/entity/zombie/cosmetics/biome_taiga",
+				"taiga_cosmetic_1": "textures/entity/zombie/cosmetics/biome_taiga",
+				"taiga_cosmetic_2": "textures/entity/zombie/cosmetics/biome_taiga"
+			},
+			"geometry": {
+				// I am NOT multiplying my skins by two lmfao
+				// Slim is cooler
+				// "default": "geometry.sumis_zombie_default",
+				"slim": "geometry.sumis_zombie_slim"
+			},
+			"spawn_egg": {
+				"texture": "spawn_egg",
+				"texture_index": 12
+			},
+			"scripts": {
+				"animate": [
+					"controller.zombie_attack_bare_hand",
+					"controller.humanoid_baby_big_head",
+					"controller.damage_nearby_mobs",
+					"controller.use_item_progress",
+					"controller.brandish_spear",
+					"controller.bow_and_arrow",
+					"controller.sneaking",
+					"controller.charging",
+					"controller.holding",
+					"controller.swimming",
+					"controller.move",
+					"controller.bob",
+					"look_at_target",
+					"riding",
+					"attack"
+				],
+				"initialize": [
+					"variable.skins = 0;"
+				],
+				"pre_animation": [
+					"variable.tcos0 = (Math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+				]
+			},
+			"animations": {
+				"controller.damage_nearby_mobs": "controller.animation.humanoid.damage_nearby_mobs",
+				"controller.zombie_attack_bare_hand": "controller.animation.zombie.attack_bare_hand",
+				"controller.humanoid_baby_big_head": "controller.animation.humanoid.baby_big_head",
+				"controller.use_item_progress": "controller.animation.humanoid.use_item_progress",
+				"controller.brandish_spear": "controller.animation.humanoid.brandish_spear",
+				"controller.bow_and_arrow": "controller.animation.humanoid.bow_and_arrow",
+				"controller.charging": "controller.animation.humanoid.charging",
+				"controller.sneaking": "controller.animation.humanoid.sneaking",
+				"controller.holding": "controller.animation.humanoid.holding",
+				"controller.swimming": "controller.animation.zombie.swimming",
+				"controller.move": "controller.animation.humanoid.move",
+				"controller.bob": "controller.animation.humanoid.bob",
+				//
+				"look_at_target": "controller.animation.humanoid.look_at_target",
+				"riding": "controller.animation.humanoid.riding",
+				"attack": "controller.animation.humanoid.attack",
+				////
+				"humanoid_big_head": "animation.humanoid.big_head",
+				"look_at_target_default": "animation.humanoid.look_at_target.default",
+				"look_at_target_gliding": "animation.humanoid.look_at_target.gliding",
+				"look_at_target_swimming": "animation.humanoid.look_at_target.swimming",
+				"move": "animation.humanoid.move",
+				"riding.arms": "animation.humanoid.riding.arms",
+				"riding.legs": "animation.humanoid.riding.legs",
+				"holding": "animation.humanoid.holding",
+				"brandish_spear": "animation.humanoid.brandish_spear",
+				"charging": "animation.humanoid.charging",
+				"attack.rotations": "animation.humanoid.attack.rotations",
+				"sneaking": "animation.humanoid.sneaking",
+				"bob": "animation.humanoid.bob",
+				"damage_nearby_mobs": "animation.humanoid.damage_nearby_mobs",
+				"bow_and_arrow": "animation.humanoid.bow_and_arrow",
+				"use_item_progress": "animation.humanoid.use_item_progress",
+				"zombie_attack_bare_hand": "animation.zombie.attack_bare_hand",
+				"swimming": "animation.zombie.swimming"
+			},
+			"render_controllers": [
+				"controller.render.zombie"
+			],
+			"enable_attachables": true
+		}
+	}
+}

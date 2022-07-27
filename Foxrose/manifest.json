@@ -15,6 +15,9 @@
             1
         ]
     },
+    "capabilities": [
+        "raytraced"
+    ],
     "modules": [
         {
             "description": "Vanilla improvements and patches for use in tandem with Team Wormwood projects.",

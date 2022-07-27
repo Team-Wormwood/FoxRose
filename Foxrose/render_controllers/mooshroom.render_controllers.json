@@ -16,7 +16,7 @@
 					"*": true
 				},
 				{
-					"cowbell": "query.mark_variant == 1"
+					"cowbell": "query.skin_id == 1"
 				}
 			],
 			"materials": [

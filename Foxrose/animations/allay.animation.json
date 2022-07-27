@@ -145,6 +145,13 @@
 			"loop": true,
 			"animation_length": 2,
 			"bones": {
+				"root": {
+					"rotation": [
+						"query.body_x_rotation",
+						"query.body_y_rotation",
+						0.0
+					]
+				},
 				"head": {
 					"rotation": {
 						"0.0": {

@@ -19,6 +19,7 @@
 				"baby_transform": "animation.cow.baby_transform"
 			},
 			"scripts": {
+				"should_update_bones_and_effects_offscreen": true,
 				"animate": [
 					"look_at_target",
 					{

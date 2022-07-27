@@ -3534,9 +3534,9 @@
       "chiseled_deepslate_top": {
          "textures": "textures/blocks/deepslate/chiseled_deepslate_top"
       },
-      "chiseled_nether_bricks_top": {
-         "textures": "textures/blocks/chiseled_nether_bricks_top"
-      },
+      // "chiseled_nether_bricks_top": {
+      //    "textures": "textures/blocks/chiseled_nether_bricks_top"
+      // },
       "chiseled_polished_blackstone_top": {
          "textures": "textures/blocks/chiseled_polished_blackstone_top"
       },
