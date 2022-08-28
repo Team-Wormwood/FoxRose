@@ -14,17 +14,17 @@
 				"default": "geometry.fluffy_cow"
 			},
 			"animations": {
-				"walking": "animation.fluffy_cow.walking",
+				"movement_controller": "controller.animation.fluffy_cow.moove",
 				"look_at_target": "animation.cowmmon.look_at_target",
+				"sprinting": "animation.fluffy_cow.sprinting",
+				"walking": "animation.fluffy_cow.walking",
 				"baby_transform": "animation.cow.baby_transform"
 			},
 			"scripts": {
 				"should_update_bones_and_effects_offscreen": true,
 				"animate": [
+					"movement_controller",
 					"look_at_target",
-					{
-						"walking": "query.modified_move_speed"
-					},
 					{
 						"baby_transform": "query.is_baby"
 					}

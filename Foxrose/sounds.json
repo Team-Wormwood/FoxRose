@@ -1468,23 +1468,23 @@
         "metal": {
             "events": {
                 "break": {
-                    "pitch": 1.2,
-                    "sound": "dig.stone",
+                    "pitch": 0.8,
+                    "sound": "block.copper.break",
                     "volume": 1
                 },
                 "default": "",
                 "hit": {
-                    "pitch": 0.75,
-                    "sound": "hit.stone",
+                    "pitch": 0.5,
+                    "sound": "block.copper.hit",
                     "volume": 0.25
                 },
                 "item.use.on": {
-                    "pitch": 1.2,
-                    "sound": "use.anvil"
+                    "pitch": 0.8,
+                    "sound": "block.copper.place"
                 },
                 "place": {
-                    "pitch": 1.2,
-                    "sound": "dig.stone",
+                    "pitch": 0.8,
+                    "sound": "block.copper.place",
                     "volume": 1
                 },
                 "power.off": {
@@ -1927,40 +1927,6 @@
                 "place": {
                     "pitch": 0.8,
                     "sound": "block.netherrack.place",
-                    "volume": 1
-                },
-                "power.off": {
-                    "pitch": 0.5,
-                    "sound": "block.lever.click"
-                },
-                "power.on": {
-                    "pitch": 0.6,
-                    "sound": "block.lever.click"
-                }
-            },
-            "pitch": 1,
-            "volume": 1
-        },
-        "normal": {
-            "events": {
-                "break": {
-                    "pitch": 0.8,
-                    "sound": "block.wet_grass.break",
-                    "volume": 1
-                },
-                "default": "",
-                "hit": {
-                    "pitch": 0.5,
-                    "sound": "block.wet_grass.hit",
-                    "volume": 0.25
-                },
-                "item.use.on": {
-                    "pitch": 0.8,
-                    "sound": "block.wet_grass.place"
-                },
-                "place": {
-                    "pitch": 0.8,
-                    "sound": "block.wet_grass.place",
                     "volume": 1
                 },
                 "power.off": {
@@ -6419,65 +6385,6 @@
                 },
                 "pitch": 1,
                 "volume": 1
-            },
-            "wood": {
-                "events": {
-                    "default": "",
-                    "fall-disabled": {
-                        "pitch": 0.75,
-                        "sound": "fall.wood",
-                        "volume": 0.5
-                    },
-                    "jump": {
-                        "sound": "silence",
-                        "volume": 0
-                    },
-                    "land": {
-                        "sound": "land.wood",
-                        "volume": 0.15
-                    },
-                    "step": {
-                        "sound": "step.wood",
-                        "volume": 0.15
-                    }
-                },
-                "pitch": 1,
-                "volume": 1
-            }
-        },
-        "entity_sounds": {
-            "defaults": {
-                "events": {
-                    "fall": {
-                        "default": {
-                            "pitch": 0.75,
-                            "sound": "",
-                            "volume": 0.5
-                        }
-                    }
-                }
-            },
-            "entities": {
-                "donkey": {
-                    "pitch": 1,
-                    "volume": 0.15
-                },
-                "horse": {
-                    "pitch": 1,
-                    "volume": 0.15
-                },
-                "mule": {
-                    "pitch": 1,
-                    "volume": 0.15
-                },
-                "skeleton_horse": {
-                    "pitch": 1,
-                    "volume": 0.15
-                },
-                "zombie_horse": {
-                    "pitch": 1,
-                    "volume": 0.15
-                }
             }
         }
     }

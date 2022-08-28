@@ -1,7 +1,7 @@
 {
     "blast_furnace": {
         "textures": {
-            "down": "blast_furnace_bottom",
+            "down": "blast_furnace_top",
             "east": "blast_furnace_side",
             "north": "blast_furnace_side",
             "south": "blast_furnace_front_off",
@@ -39,6 +39,7 @@
         "sound": "nether_brick"
     },
     "deepslate_coal_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_coal_ore_top",
             "side": "deepslate_coal_ore",
@@ -46,6 +47,7 @@
         }
     },
     "deepslate_copper_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_copper_ore_top",
             "side": "deepslate_copper_ore",
@@ -53,6 +55,7 @@
         }
     },
     "deepslate_diamond_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_diamond_ore_top",
             "side": "deepslate_diamond_ore",
@@ -60,6 +63,7 @@
         }
     },
     "deepslate_emerald_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_emerald_ore_top",
             "side": "deepslate_emerald_ore",
@@ -67,6 +71,7 @@
         }
     },
     "deepslate_gold_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_gold_ore_top",
             "side": "deepslate_gold_ore",
@@ -74,6 +79,7 @@
         }
     },
     "deepslate_iron_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_iron_ore_top",
             "side": "deepslate_iron_ore",
@@ -81,6 +87,7 @@
         }
     },
     "deepslate_lapis_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_lapis_ore_top",
             "side": "deepslate_lapis_ore",
@@ -88,6 +95,7 @@
         }
     },
     "deepslate_redstone_ore": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "deepslate_redstone_ore_top",
             "side": "deepslate_redstone_ore",
@@ -101,7 +109,7 @@
     ],
     "furnace": {
         "textures": {
-            "down": "furnace_bottom",
+            "down": "furnace_top",
             "east": "furnace_side",
             "north": "furnace_side",
             "south": "furnace_front_off",
@@ -110,10 +118,10 @@
         }
     },
     "gilded_blackstone": {
+        "sound" : "nether_gold_ore",
         "textures": {
             "down": "gilded_blackstone_top",
-            "side": "gilded_blackstone",
-            "up": "gilded_blackstone_top"
+            "side": "gilded_blackstone"
         }
     },
     "lit_deepslate_redstone_ore": {
