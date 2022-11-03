@@ -1,0 +1,33 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "§cFoxrose§r",
+        "description": "Vanilla improvements and patches for use in tandem with Team Wormwood projects.",
+        "uuid": "d0282564-1870-46ec-93aa-c6ff839e8c1f",
+        "version": [
+            1,
+            0,
+            0
+        ],
+        "min_engine_version": [
+            1,
+            18,
+            1
+        ]
+    },
+    "capabilities": [
+        "raytraced"
+    ],
+    "modules": [
+        {
+            "description": "Vanilla improvements and patches for use in tandem with Team Wormwood projects.",
+            "type": "resources",
+            "uuid": "db43a1b3-25a8-433c-874a-3f4c4d158585",
+            "version": [
+                1,
+                0,
+                0
+            ]
+        }
+    ]
+}
