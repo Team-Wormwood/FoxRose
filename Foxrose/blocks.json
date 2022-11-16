@@ -1,12 +1,24 @@
 {
+    "format_version": [
+        1,
+        1,
+        0
+    ],
     "blast_furnace": {
         "textures": {
-            "down": "blast_furnace_top",
+            "down": "blast_furnace_bottom",
             "east": "blast_furnace_side",
             "north": "blast_furnace_side",
             "south": "blast_furnace_front_off",
             "up": "blast_furnace_top",
             "west": "blast_furnace_side"
+        }
+    },
+    "bookshelf": {
+        "textures": {
+            "down": "bookshelf_top",
+            "side": "bookshelf",
+            "up": "bookshelf_top"
         }
     },
     "brown_mushroom": {
@@ -39,7 +51,7 @@
         "sound": "nether_brick"
     },
     "deepslate_coal_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_coal_ore_top",
             "side": "deepslate_coal_ore",
@@ -47,7 +59,7 @@
         }
     },
     "deepslate_copper_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_copper_ore_top",
             "side": "deepslate_copper_ore",
@@ -55,7 +67,7 @@
         }
     },
     "deepslate_diamond_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_diamond_ore_top",
             "side": "deepslate_diamond_ore",
@@ -63,7 +75,7 @@
         }
     },
     "deepslate_emerald_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_emerald_ore_top",
             "side": "deepslate_emerald_ore",
@@ -71,7 +83,7 @@
         }
     },
     "deepslate_gold_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_gold_ore_top",
             "side": "deepslate_gold_ore",
@@ -79,7 +91,7 @@
         }
     },
     "deepslate_iron_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_iron_ore_top",
             "side": "deepslate_iron_ore",
@@ -87,7 +99,7 @@
         }
     },
     "deepslate_lapis_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_lapis_ore_top",
             "side": "deepslate_lapis_ore",
@@ -95,18 +107,13 @@
         }
     },
     "deepslate_redstone_ore": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "deepslate_redstone_ore_top",
             "side": "deepslate_redstone_ore",
             "up": "deepslate_redstone_ore_top"
         }
     },
-    "format_version": [
-        1,
-        1,
-        0
-    ],
     "furnace": {
         "textures": {
             "down": "furnace_top",
@@ -118,7 +125,7 @@
         }
     },
     "gilded_blackstone": {
-        "sound" : "nether_gold_ore",
+        "sound": "nether_gold_ore",
         "textures": {
             "down": "gilded_blackstone_top",
             "side": "gilded_blackstone"
@@ -177,6 +184,14 @@
     "red_mushroom": {
         "sound": "grass",
         "textures": "stupid_mushroom_red"
+    },
+    "shulker_box": {
+        "sound": "stone",
+        "textures": {
+            "down": "shulker_box_top",
+            "side": "shulker_box_side",
+            "up": "shulker_box_top"
+        }
     },
     "stonebrick": {
         "textures": {

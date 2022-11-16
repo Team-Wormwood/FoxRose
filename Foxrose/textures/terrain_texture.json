@@ -289,9 +289,6 @@
       "bookshelf": {
          "textures": "textures/blocks/bookshelf"
       },
-      "bookshelf_top": {
-         "textures": "textures/blocks/planks_oak"
-      },
       "border_block": {
          "textures": "textures/blocks/border"
       },
@@ -921,12 +918,6 @@
       },
       "diorite": {
          "textures": "textures/blocks/stone_diorite"
-      },
-      "dirt": {
-         "textures": [
-            "textures/blocks/dirt",
-            "textures/blocks/coarse_dirt"
-         ]
       },
       "dirt_podzol_bottom": {
          "textures": "textures/blocks/dirt"
@@ -1813,9 +1804,6 @@
             "textures/blocks/mushroom_block_skin_stem"
          ]
       },
-      "stupid_mushroom_brown": {
-         "textures": "textures/blocks/stupid_fucking_shrooms/mushroom_brown"
-      },
       "mushroom_brown_bottom": {
          "textures": [
             "textures/blocks/mushroom_block_inside",
@@ -1935,9 +1923,6 @@
             "textures/blocks/mushroom_block_skin_brown",
             "textures/blocks/mushroom_block_skin_stem"
          ]
-      },
-      "stupid_mushroom_red": {
-         "textures": "textures/blocks/stupid_fucking_shrooms/mushroom_red"
       },
       "mushroom_red_bottom": {
          "textures": [
@@ -3042,51 +3027,6 @@
             "textures/blocks/red_sandstone_top"
          ]
       },
-      "stone_slab_side": {
-         "textures": [
-            "textures/blocks/stone_slab_side",
-            "textures/blocks/sandstone_normal_slab",
-            "textures/blocks/planks_oak",
-            "textures/blocks/cobblestone",
-            "textures/blocks/brick",
-            "textures/blocks/stonebrick",
-            "textures/blocks/quartz_block_slab",
-            "textures/blocks/nether_brick"
-         ]
-      },
-      "stone_slab_side_2": {
-         "textures": [
-            "textures/blocks/red_sandstone_normal_slab",
-            "textures/blocks/purpur_block",
-            "textures/blocks/prismarine_rough",
-            "textures/blocks/prismarine_dark",
-            "textures/blocks/prismarine_bricks_slab",
-            "textures/blocks/cobblestone_mossy",
-            "textures/blocks/sandstone_top",
-            "textures/blocks/red_nether_brick"
-         ]
-      },
-      "stone_slab_side_3": {
-         "textures": [
-            "textures/blocks/end_bricks",
-            "textures/blocks/red_sandstone_top",
-            "textures/blocks/stone_andesite_smooth_slab",
-            "textures/blocks/stone_andesite",
-            "textures/blocks/stone_diorite",
-            "textures/blocks/stone_diorite_smooth_slab",
-            "textures/blocks/stone_granite",
-            "textures/blocks/stone_granite_smooth_slab"
-         ]
-      },
-      "stone_slab_side_4": {
-         "textures": [
-            "textures/blocks/stonebrick_mossy",
-            "textures/blocks/quartz_block_bottom",
-            "textures/blocks/stone",
-            "textures/blocks/sandstone_smooth_slab",
-            "textures/blocks/red_sandstone_smooth_slab"
-         ]
-      },
       "stone_slab_top": {
          "textures": [
             "textures/blocks/stone_slab_top",
@@ -3130,14 +3070,6 @@
             "textures/blocks/stone",
             "textures/blocks/sandstone_top",
             "textures/blocks/red_sandstone_top"
-         ]
-      },
-      "stonebrick": {
-         "textures": [
-            "textures/blocks/stonebrick",
-            "textures/blocks/stonebrick_mossy",
-            "textures/blocks/stonebrick_cracked",
-            "textures/blocks/stonebrick_carved"
          ]
       },
       "stonecutter2_bottom": {
@@ -3385,24 +3317,6 @@
             "textures/blocks/warped_wart_block"
          ]
       },
-      "waterlily": {
-         "textures": {
-            "variations": [
-               {
-                  "path": "textures/blocks/waterlily_0",
-                  "tint_color": "#208030"
-               },
-               {
-                  "path": "textures/blocks/waterlily_1",
-                  "tint_color": "#208030"
-               },
-               {
-                  "path": "textures/blocks/waterlily_2",
-                  "tint_color": "#208030"
-               }
-            ]
-         }
-      },
       "waterlily_carried": {
          "textures": "textures/blocks/carried_waterlily"
       },
@@ -3527,6 +3441,93 @@
       "yellow_glazed_terracotta": {
          "textures": "textures/blocks/glazed_terracotta_yellow"
       },
+      // Modified Definitions //
+      "bookshelf_top": {
+         "textures": "textures/blocks/bookshelf_top"
+      },
+      //      "stonebrick": {    Nice! This worked as expected. I'll leave it here for future reference
+      //         "textures": [
+      //            "textures/blocks/stonebrick",
+      //            {
+      //               "variations": [
+      //                  {
+      //                     "path": "textures/blocks/stonebrick"
+      //                  },
+      //                  {
+      //                     "path": "textures/blocks/stonebrick_mossy"
+      //                  },
+      //                  {
+      //                     "path": "textures/blocks/stonebrick_cracked"
+      //                  }
+      //               ]
+      //            },
+      //            "textures/blocks/stonebrick_cracked",
+      //            "textures/blocks/stonebrick_carved"
+      //         ]
+      //      },
+      "stone_slab_side": {
+         "textures": [
+            "textures/blocks/stone_slab_side",
+            "textures/blocks/sandstone_normal_slab",
+            "textures/blocks/planks_oak",
+            "textures/blocks/cobblestone",
+            "textures/blocks/brick",
+            "textures/blocks/stonebrick",
+            "textures/blocks/quartz_block_slab",
+            "textures/blocks/nether_brick"
+         ]
+      },
+      "stone_slab_side_2": {
+         "textures": [
+            "textures/blocks/red_sandstone_normal_slab",
+            "textures/blocks/purpur_block",
+            "textures/blocks/prismarine_rough",
+            "textures/blocks/prismarine_dark",
+            "textures/blocks/prismarine_bricks_slab",
+            "textures/blocks/cobblestone_mossy",
+            "textures/blocks/sandstone_top",
+            "textures/blocks/red_nether_brick"
+         ]
+      },
+      "stone_slab_side_3": {
+         "textures": [
+            "textures/blocks/end_bricks",
+            "textures/blocks/red_sandstone_top",
+            "textures/blocks/stone_andesite_smooth_slab",
+            "textures/blocks/stone_andesite",
+            "textures/blocks/stone_diorite",
+            "textures/blocks/stone_diorite_smooth_slab",
+            "textures/blocks/stone_granite",
+            "textures/blocks/stone_granite_smooth_slab"
+         ]
+      },
+      "stone_slab_side_4": {
+         "textures": [
+            "textures/blocks/stonebrick_mossy",
+            "textures/blocks/quartz_block_bottom",
+            "textures/blocks/stone",
+            "textures/blocks/sandstone_smooth_slab",
+            "textures/blocks/red_sandstone_smooth_slab"
+         ]
+      },
+      "waterlily": {
+         "textures": {
+            "variations": [
+               {
+                  "path": "textures/blocks/waterlily_0",
+                  "tint_color": "#208030"
+               },
+               {
+                  "path": "textures/blocks/waterlily_1",
+                  "tint_color": "#208030"
+               },
+               {
+                  "path": "textures/blocks/waterlily_2",
+                  "tint_color": "#208030"
+               }
+            ]
+         }
+      },
       // New Definitions //
       "blast_furnace_bottom": {
          "textures": "textures/blocks/blast_furnace_bottom"
@@ -3535,7 +3536,7 @@
          "textures": "textures/blocks/deepslate/chiseled_deepslate_top"
       },
       "chiseled_nether_bricks_top": {
-         "textures": "textures/blocks/chiseled_nether_bricks"
+         "textures": "textures/blocks/chiseled_nether_bricks_top"
       },
       "chiseled_polished_blackstone_top": {
          "textures": "textures/blocks/chiseled_polished_blackstone"
@@ -3564,6 +3565,12 @@
       "deepslate_redstone_ore_top": {
          "textures": "textures/blocks/deepslate/deepslate_redstone_ore_top"
       },
+      "dirt": {
+         "textures": [
+            "textures/blocks/dirt",
+            "textures/blocks/coarse_dirt"
+         ]
+      },
       "furnace_bottom": {
          "textures": "textures/blocks/furnace_bottom"
       },
@@ -3579,6 +3586,13 @@
       "polished_deepslate_slab": {
          "textures": "textures/blocks/polished_deepslate_slab"
       },
+      "prismarine_top": {
+         "textures": [
+            "textures/blocks/prismarine_rough",
+            "textures/blocks/prismarine_dark",
+            "textures/blocks/prismarine_bricks_top"
+         ]
+      },
       "prismarine_bottom": {
          "textures": [
             "textures/blocks/prismarine_rough",
@@ -3586,11 +3600,25 @@
             "textures/blocks/prismarine_bricks_bottom"
          ]
       },
-      "prismarine_top": {
+      "shulker_box_side": {
          "textures": [
-            "textures/blocks/prismarine_rough",
-            "textures/blocks/prismarine_dark",
-            "textures/blocks/prismarine_bricks_top"
+            "textures/blocks/shulker_side_white",
+            "textures/blocks/shulker_side_orange",
+            "textures/blocks/shulker_side_magenta",
+            "textures/blocks/shulker_side_light_blue",
+            "textures/blocks/shulker_side_yellow",
+            "textures/blocks/shulker_side_lime",
+            "textures/blocks/shulker_side_pink",
+            "textures/blocks/shulker_side_gray",
+            "textures/blocks/shulker_side_silver",
+            "textures/blocks/shulker_side_cyan",
+            "textures/blocks/shulker_side_purple",
+            "textures/blocks/shulker_side_blue",
+            "textures/blocks/shulker_side_brown",
+            "textures/blocks/shulker_side_green",
+            "textures/blocks/shulker_side_red",
+            "textures/blocks/shulker_side_black",
+            "textures/blocks/shulker_side_undyed"
          ]
       },
       "stonebrick_top": {
@@ -3600,6 +3628,12 @@
             "textures/blocks/stonebrick_cracked",
             "textures/blocks/stonebrick_carved_top"
          ]
+      },
+      "stupid_mushroom_brown": {
+         "textures": "textures/blocks/stupid_fucking_shrooms/mushroom_brown"
+      },
+      "stupid_mushroom_red": {
+         "textures": "textures/blocks/stupid_fucking_shrooms/mushroom_red"
       }
    },
    "texture_name": "atlas.terrain"

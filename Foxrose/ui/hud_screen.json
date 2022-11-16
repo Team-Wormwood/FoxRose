@@ -1,0 +1,402 @@
+{
+    "exp_progress_bar_and_hotbar": {
+        "type": "panel",
+        "size": [
+            182,
+            31
+        ],
+        "offset": [
+            0,
+            -12
+        ],
+        "anchor_from": "bottom_middle",
+        "anchor_to": "bottom_middle",
+        "controls": [
+            {
+                "resizing_xp_bar_with_hotbar": {
+                    "type": "panel",
+                    "size": [
+                        182,
+                        5
+                    ],
+                    "controls": [
+                        {
+                            "java_empty_experience_bar@java_empty_experience_bar": {
+                                "size": [
+                                    182,
+                                    5
+                                ],
+                                "offset": [
+                                    0,
+                                    0.5
+                                ],
+                                "layer": 1,
+                                "controls": [
+                                    {
+                                        "java_full_experience_bar@java_full_experience_bar": {
+                                            "size": [
+                                                182,
+                                                5
+                                            ],
+                                            "layer": 2,
+                                            "controls": [
+                                                {
+                                                    "hotbar@hotbar_chooser": {
+                                                        "offset": [
+                                                            4,
+                                                            16
+                                                        ]
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "progress_text_label@progress_text_label": {
+                                "offset": [
+                                    0,
+                                    3
+                                ],
+                                "layer": 8
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_1@progress_text_label_outline": {
+                                "offset": [
+                                    0,
+                                    4
+                                ],
+                                "layer": 7
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_2@progress_text_label_outline": {
+                                "offset": [
+                                    0,
+                                    2
+                                ],
+                                "layer": 7
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_3@progress_text_label_outline": {
+                                "offset": [
+                                    1,
+                                    3
+                                ],
+                                "layer": 7
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_4@progress_text_label_outline": {
+                                "offset": [
+                                    -1,
+                                    3
+                                ],
+                                "layer": 7
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#show_survival_ui",
+                            "binding_name_override": "#visible"
+                        }
+                    ]
+                }
+            },
+            // For when we hide the XP bar in Creative Move we still want to display the HUD
+            {
+                "hotbar@hotbar_chooser": {
+                    "offset": [
+                        4,
+                        16
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#is_creative_mode",
+                            "binding_name_override": "#visible"
+                        }
+                    ]
+                }
+            },
+            {
+                "item_text_factory": {
+                    "size": [
+                        100,
+                        10
+                    ],
+                    "type": "factory",
+                    "control_ids": {
+                        "item_text": "@hud.item_name_text",
+                        "jukebox_text": "@hud.jukebox_popup_text"
+                    }
+                }
+            }
+        ]
+    },
+    // redo layout for exp and progress bar to work with the binding trick
+    // without touching classic
+    "exp_progress_bar_and_hotbar_pocket": {
+        "type": "panel",
+        "size": [
+            182,
+            31
+        ],
+        "offset": [
+            0,
+            -12
+        ],
+        "anchor_from": "bottom_middle",
+        "anchor_to": "bottom_middle",
+        "controls": [
+            {
+                "resizing_xp_bar_with_hotbar": {
+                    "type": "panel",
+                    "size": [
+                        182,
+                        5
+                    ],
+                    "anchor_from": "bottom_middle",
+                    "anchor_to": "bottom_middle",
+                    "use_anchored_offset": true,
+                    "property_bag": {
+                        "#anchored_offset_value_y": 0.0,
+                        "#size_binding_x": 0.0,
+                        "#size_binding_y": 0.0
+                    },
+                    "controls": [
+                        {
+                            "java_empty_experience_bar@java_empty_experience_bar": {
+                                "size": [
+                                    182,
+                                    5
+                                ],
+                                "offset": [
+                                    0,
+                                    0.5
+                                ],
+                                "layer": 1,
+                                "controls": [
+                                    {
+                                        "java_full_experience_bar@java_full_experience_bar": {
+                                            "size": [
+                                                182,
+                                                5
+                                            ],
+                                            "layer": 2
+                                        }
+                                    }
+                                ]
+                            }
+                        },
+                        {
+                            "progress_text_label@progress_text_label": {
+                                "offset": [
+                                    0,
+                                    3
+                                ],
+                                "layer": 8
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_1@progress_text_label_outline": {
+                                "offset": [
+                                    0,
+                                    4
+                                ],
+                                "layer": 7
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_2@progress_text_label_outline": {
+                                "offset": [
+                                    0,
+                                    2
+                                ],
+                                "layer": 7
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_3@progress_text_label_outline": {
+                                "offset": [
+                                    1,
+                                    3
+                                ],
+                                "layer": 7
+                            }
+                        },
+                        {
+                            "progress_text_label_outline_4@progress_text_label_outline": {
+                                "offset": [
+                                    -1,
+                                    3
+                                ],
+                                "layer": 7
+                            }
+                        }
+                    ],
+                    "bindings": [
+                        {
+                            "binding_name": "#show_survival_ui",
+                            "binding_name_override": "#visible"
+                        },
+                        {
+                            "binding_name": "#exp_bar_and_text_offset_y",
+                            "binding_name_override": "#anchored_offset_value_y"
+                        },
+                        {
+                            "binding_name": "#exp_bar_size_x",
+                            "binding_name_override": "#size_binding_x"
+                        },
+                        {
+                            "binding_name": "#exp_bar_size_y",
+                            "binding_name_override": "#size_binding_y"
+                        }
+                    ]
+                }
+            },
+            {
+                "hotbar_panel@hotbar_panel_pocket": {
+                    "offset": [
+                        0,
+                        -2
+                    ]
+                }
+            },
+            {
+                "item_text": {
+                    "type": "panel",
+                    "offset": [
+                        0,
+                        0
+                    ],
+                    "anchor_from": "bottom_middle",
+                    "anchor_to": "bottom_middle",
+                    "use_anchored_offset": true,
+                    "property_bag": {
+                        "#anchored_offset_value_y": 0.0
+                    },
+                    "bindings": [
+                        {
+                            "binding_name": "#exp_bar_and_text_offset_y",
+                            "binding_name_override": "#anchored_offset_value_y"
+                        }
+                    ],
+                    "controls": [
+                        {
+                            "item_text_factory": {
+                                "size": [
+                                    100,
+                                    10
+                                ],
+                                "type": "factory",
+                                "control_ids": {
+                                    "item_text": "@hud.item_name_text_root",
+                                    "jukebox_text": "@hud.jukebox_popup_text"
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "java_full_experience_bar": {
+        "type": "image",
+        "texture": "textures/ui/java_hud/experiencebarfull_new",
+        "clip_direction": "left",
+        "clip_pixelperfect": true,
+        "bindings": [
+            {
+                "binding_name": "#exp_progress",
+                "binding_name_override": "#clip_ratio",
+                "binding_type": "global"
+            }
+        ]
+    },
+    "java_empty_experience_bar": {
+        "type": "image",
+        "texture": "textures/ui/java_hud/experiencebarempty_new"
+    },
+    "java_hotbar": {
+        "type": "image",
+        "texture": "textures/ui/java_hud/hotbar_new"
+    },
+    "progress_text_label": {
+        "type": "label",
+        "shadow": false,
+        "text": "#level_number",
+        "color": "$experience_text_color",
+        "anchor_from": "top_middle",
+        "anchor_to": "bottom_middle",
+        "bindings": [
+            {
+                "binding_name": "#level_number",
+                "binding_type": "global"
+            },
+            {
+                "binding_name": "#level_number_visible",
+                "binding_type": "global",
+                "binding_name_override": "#visible"
+            }
+        ]
+    },
+    "progress_text_label_outline": {
+        "type": "label",
+        "shadow": false,
+        "text": "#level_number",
+        "color": "$experience_text_back_color",
+        "anchor_from": "top_middle",
+        "anchor_to": "bottom_middle",
+        "bindings": [
+            {
+                "binding_name": "#level_number",
+                "binding_type": "global"
+            },
+            {
+                "binding_name": "#level_number_visible",
+                "binding_type": "global",
+                "binding_name_override": "#visible"
+            }
+        ]
+    },
+    "hotbar_slot_image": {
+        "$hotbar_slot_image_size|default": [
+            20,
+            22
+        ],
+        "type": "image",
+        "offset": [
+            0,
+            0
+        ],
+        "size": "$hotbar_slot_image_size",
+        "layer": 1,
+        "alpha": 1
+    },
+    "elipses_image": {
+        "type": "image",
+        "$elipses_image_size|default": [
+            13,
+            4
+        ],
+        "texture": "textures/ui/elipses",
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "size": "$elipses_image_size",
+        "layer": 30,
+        "alpha": 1
+    },
+    "item_durability@common.durability_bar": {
+        "$durability_bar_required|default": true,
+        "$item_collection_name": "$hotbar_collection_name",
+        "offset": [
+            0,
+            5.5
+        ]
+    }
+}
