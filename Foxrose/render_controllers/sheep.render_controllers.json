@@ -1,0 +1,42 @@
+{
+	"format_version": "1.8.0",
+	"render_controllers": {
+		"controller.render.sheep": {
+			"geometry": "Geometry.default",
+			"part_visibility": [
+				{
+					"*": true
+				},
+				{
+					"tail": "!query.is_baby"
+				},
+				{
+					"bodyWool": "!query.is_sheared && !query.is_baby"
+				},
+				{
+					"headWool": "!query.is_sheared && !query.is_baby"
+				},
+				{
+					"leftFrontLegWool": "!query.is_sheared && !query.is_baby"
+				},
+				{
+					"rightFrontLegWool": "!query.is_sheared && !query.is_baby"
+				},
+				{
+					"leftBackLegWool": "!query.is_sheared && !query.is_baby"
+				},
+				{
+					"rightBackLegWool": "!query.is_sheared && !query.is_baby"
+				}
+			],
+			"materials": [
+				{
+					"*": "Material.default"
+				}
+			],
+			"textures": [
+				"Texture.default"
+			]
+		}
+	}
+}
